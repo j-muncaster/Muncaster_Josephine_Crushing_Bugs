@@ -40,6 +40,10 @@ targetZones.forEach(target => {
 
 const resetBtn = document.getElementById("reset-btn");
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+resetBtn.addEventListener("click", resetGame);
+>>>>>>> Stashed changes
+=======
 resetBtn.addEventListener("click", resetGame);
 >>>>>>> Stashed changes
 =======
