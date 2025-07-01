@@ -21,7 +21,10 @@ function dragOver(event) {
 function drop(event) {
     event.preventDefault();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
     this.classList.remove("highlight");
 
@@ -48,5 +51,9 @@ targetZones.forEach(target => {
 =======
 
 const resetBtn = document.getElementById("reset-btn");
+<<<<<<< Updated upstream
+resetBtn.addEventListener("click", resetGame);
+>>>>>>> Stashed changes
+=======
 resetBtn.addEventListener("click", resetGame);
 >>>>>>> Stashed changes
