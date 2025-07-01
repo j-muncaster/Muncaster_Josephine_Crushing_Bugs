@@ -32,4 +32,12 @@ labels.forEach(label => {
 targetZones.forEach(target => {
     target.addEventListener("dragover", dragOver);
     target.addEventListener("drop", drop);
+<<<<<<< Updated upstream
 });
+=======
+});
+
+
+const resetBtn = document.getElementById("reset-btn");
+resetBtn.addEventListener("click", resetGame);
+>>>>>>> Stashed changes
