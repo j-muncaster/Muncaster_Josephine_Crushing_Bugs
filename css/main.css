@@ -119,6 +119,11 @@ h1, p {
     background-color: #c0392b;
 }
 
+.target-zone.highlight {
+    background-color: #fff2b1;
+    transition: background-color 0.2s ease-in-out;
+}
+
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
