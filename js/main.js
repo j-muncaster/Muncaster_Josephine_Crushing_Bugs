@@ -20,21 +20,26 @@ function dragOver(event) {
 
 function drop(event) {
     event.preventDefault();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
 
     this.classList.remove("highlight");
+
 
     if (this.children.length > 0) {
         console.log("This zone already has a label.");
         return;
     }
->>>>>>> Stashed changes
+
     this.appendChild(currentDraggedElement);
     currentDraggedElement = null;
+}
+
+function resetGame() {
+    const labelBox = document.getElementById("label-box");
+    const allLabels = document.querySelectorAll(".label");
+    allLabels.forEach (label => {
+        labelBox.appendChild(label);
+    });
+    console.log("Game has been reset.");
 }
 
 //Event listeners
@@ -47,13 +52,8 @@ targetZones.forEach(target => {
     target.addEventListener("dragover", dragOver);
     target.addEventListener("drop", drop);
 });
-<<<<<<< Updated upstream
-=======
+
 
 const resetBtn = document.getElementById("reset-btn");
-<<<<<<< Updated upstream
 resetBtn.addEventListener("click", resetGame);
->>>>>>> Stashed changes
-=======
-resetBtn.addEventListener("click", resetGame);
->>>>>>> Stashed changes
+});
