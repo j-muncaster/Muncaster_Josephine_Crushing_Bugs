@@ -19,6 +19,10 @@ function dragOver(event) {
 
 function drop(event) {
     event.preventDefault();
+    if (this.children.length > 0) {
+        console.log("This zone already has a label.");
+        return;
+    }
     this.appendChild(currentDraggedElement);
     currentDraggedElement = null;
 }
@@ -42,9 +46,7 @@ targetZones.forEach(target => {
     target.addEventListener("dragover", dragOver);
     target.addEventListener("drop", drop);
 });
-<<<<<<< Updated upstream
-=======
 
 const resetBtn = document.getElementById("reset-btn");
 resetBtn.addEventListener("click", resetGame);
->>>>>>> Stashed changes
+});
