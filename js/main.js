@@ -56,4 +56,3 @@ targetZones.forEach(target => {
 
 const resetBtn = document.getElementById("reset-btn");
 resetBtn.addEventListener("click", resetGame);
-});
