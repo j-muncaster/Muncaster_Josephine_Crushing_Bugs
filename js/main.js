@@ -23,6 +23,15 @@ function drop(event) {
     currentDraggedElement = null;
 }
 
+function resetGame() {
+    const labelBox = document.getElementById("label-box");
+    const allLabels = document.querySelectorAll(".label");
+    allLabels.forEach (label => {
+        labelBox.appendChild(label);
+    });
+    console.log("Game has been reset.");
+}
+
 //Event listeners
 
 labels.forEach(label => {
@@ -33,3 +42,9 @@ targetZones.forEach(target => {
     target.addEventListener("dragover", dragOver);
     target.addEventListener("drop", drop);
 });
+<<<<<<< Updated upstream
+=======
+
+const resetBtn = document.getElementById("reset-btn");
+resetBtn.addEventListener("click", resetGame);
+>>>>>>> Stashed changes
